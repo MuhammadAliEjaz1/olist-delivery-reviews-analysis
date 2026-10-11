@@ -8,3 +8,7 @@ sqlalchemy==2.1.4
 psycopg2-binary==2.9.13
 python-dotenv==1.2.4
 jupyter==1.1.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+imbalanced-learn==0.14.2
+shap==0.53.0
