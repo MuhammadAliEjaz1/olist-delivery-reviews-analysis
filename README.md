@@ -34,13 +34,14 @@
 - Monthly return rates are mostly 0.1% to 0.7% with no clear trend. The data effectively ends 31 Aug 2018 (16 orders in September, 4 in October).
 
 ## Dashboard
+### Delivery and Reviews
+![Delivery and Reviews page](dashboard/page1.png)
 
-| Delivery and Reviews | Seller Performance | Customer Retention |
-|---|---|---|
-| ![page 1](dashboard/page1.png) | ![page 2](dashboard/page2.png) | ![page 3](dashboard/page3.png) |
+### Seller Performance
+![Seller Performance page](dashboard/page2.png)
 
-Dashboard totals reconcile to the SQL results (96,470 delivered orders, 6.77% late, 4.29 vs 2.27 average score). The cohort page excludes the 20 orders after Aug 2018, so it differs slightly from `sql/09`.
-
+### Customer Retention
+![Customer Retention page](dashboard/page3.png)
 ## Data leakage checks
 
 - Features use only orders placed before the cutoff date. A delivery counts as known only if it happened before the cutoff, and a review only if it was answered before the cutoff.
